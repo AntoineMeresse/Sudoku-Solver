@@ -6,7 +6,10 @@ from time import time
 def main(args):
     cpt = 0
     t1 = time()
-    with open("datas/sudoku5000", "r") as fl:
+    file = "/datas/sudoku10" # default file
+    if len(args) > 1:
+        file = args[1]
+    with open(file, "r") as fl:
         grids = fl.readlines()
         for g in grids:
             s = Sudoku(g.split(":")[1])

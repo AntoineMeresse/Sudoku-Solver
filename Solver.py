@@ -1,6 +1,7 @@
 from Sudoku import Sudoku
 from time import sleep
 
+
 class Solver():
 
     def __init__(self, sudoku_grid: Sudoku, delay=0.0, showsteps = False):
@@ -102,7 +103,3 @@ class Solver():
                     if self.solver():
                         return True
                     self.changeCase(x, y, 0)
-
-
-
-
