@@ -6,7 +6,7 @@ from time import time
 def main(args):
     cpt = 0
     t1 = time()
-    file = "/datas/sudoku10" # default file
+    file = "datas/sudoku10"  # default file
     if len(args) > 1:
         file = args[1]
     with open(file, "r") as fl:
